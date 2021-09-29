@@ -1,0 +1,94 @@
+
+.gauge-wrapper {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: auto;
+}
+.gauge {
+    background: #e7e7e7 none repeat scroll 0 0;
+    border-radius: 100px 100px 0 0;
+    box-shadow: 0 -3px 7px 2px rgba(0, 0, 0, 0.3);
+    font-family: Arial,Helvetica,sans-serif;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 60px;
+}
+.gauge.min-scaled {
+    transform: scale(0.5);
+}
+.gauge-center {
+    background: #15222e none repeat scroll 0 0;
+    border-radius: 100px 100px 0 0;
+    bottom: 0;
+    box-shadow: 0 -13px 15px -10px rgba(0, 0, 0, 0.28);
+    color: #fff;
+    content: "";
+    height: 60%;
+    position: absolute;
+    right: 21%;
+    width: 60%;
+}
+.gauge-center .label, .gauge-center .number {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.gauge-center .label {
+    font-size: 8px;
+    margin: 0.8em 0 0.3em;
+    opacity: 0.6;
+}
+.gauge-center .number {
+}
+.needle {
+    background: #15222e none repeat scroll 0 0;
+    border-radius: 100% 5px 5px 100%;
+    bottom: 4px;
+    box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.3);
+    display: none;
+    height: 3px;
+    left: 5px;
+    position: absolute;
+    transform: rotate(30deg);
+    transform-origin: 100% 4px 0;
+    width: 26px;
+}
+.rischio1 .needle {
+    animation: 2s ease 1s normal both 1 running speed1;
+    display: block;
+}
+.rischio2 .needle {
+    animation: 2s ease 1s normal both 1 running speed2;
+    display: block;
+}
+.rischio3 .needle {
+    animation: 2s ease 1s normal both 1 running speed3;
+    display: block;
+}
+.rischio4 .needle {
+    animation: 2s ease 1s normal both 1 running speed4;
+    display: block;
+}
+.slice-colors {
+    height: 100%;
+}
+.slice-colors .st {
+    border: 50px solid transparent;
+    bottom: 0;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+.slice-colors .st.slice-item:nth-child(2) {
+    background-color: #1eaa59;
+    border-right: 50px solid #f1c40f;
+    border-top: 50px solid #f1c40f;
+}
+.slice-colors .st.slice-item:nth-child(4) {
+    background-color: #e67e22;
+    border-bottom: 50px solid #e84c3d;
+    border-right: 50px solid #e84c3d;
+    left: 50%;
+}

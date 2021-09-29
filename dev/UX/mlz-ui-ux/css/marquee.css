@@ -1,0 +1,52 @@
+
+.simple-marquee-container {
+    background: #eaeaea none repeat scroll 0 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 45px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    font-family: inherit;
+}
+.simple-marquee-container .marquee-sibling {
+    background: #fff none repeat scroll 0 0;
+    color: #ef5258;;
+    float: left;
+    font-size: 16px;
+    font-weight: 500;
+    left: 0;
+    padding: 11px 10px 11px 0;
+    text-align: center;
+    z-index: 9;
+}
+.simple-marquee-container .marquee, .simple-marquee-container [class^="marquee"] {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+}
+.simple-marquee-container .marquee {
+    margin-left: 25%;
+}
+.simple-marquee-container .marquee-content-items {
+    display: inline-block;
+    height: 45px;
+    margin: 0;
+    padding: 5px;
+    position: relative;
+}
+.simple-marquee-container .marquee-content-items li {
+    color: #515365;
+    display: inline-block;
+    line-height: 35px;
+}
+.simple-marquee-container .marquee-content-items li::after {
+    content: "|";
+    margin: 0 1em;
+}
+.simple-marquee-container .marquee-content-items li a:hover {
+    color: #ef5258;;
+    text-decoration: underline;
+}
